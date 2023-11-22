@@ -3,6 +3,7 @@ class Circle:
         self.r = r
 
     def getArea(self):
+        pi=3.1415
         """
         This method finds the area of the Circle.
 
@@ -11,9 +12,10 @@ class Circle:
         Returns:
             float or int: result.
         """
-        pass
+        return self.r**2*pi
 
     def getLength(self):
+        pi=3.1415
         """
         This method finds the length of the cirle.
 
@@ -22,4 +24,9 @@ class Circle:
         Returns:
             float or int: result..
         """
-        pass
+        return self.r*2*pi
+
+
+
+sum = Circle(3)
+print(sum.getLength())
